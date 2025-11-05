@@ -1,18 +1,28 @@
 # 🚢 Titanic ML Project
 
-### 🚀 **[View the Live Interactive Demo]https://titanic-ml-project.streamlit.app/**
+### 🚀 **View the Live Interactive Demo https://titanic-ml-project.streamlit.app/**
 
 This project is an end-to-end data science analysis that predicts passenger survival from the Titanic disaster.
 
 All detailed analysis, exploratory data analysis (EDA), and model comparison are located within the main Jupyter Notebook 
 
-### Project Quick Links
+The notebook covers the following key steps:
 
-* **Full Analysis Notebook:** `[Titanic_Survival_Analysis.ipynb](Titanic_Survival_Analysis.ipynb)`
-* **Interactive App Code:** `[app.py](app.py)`
+1.  **Exploratory Data Analysis (EDA):** Using `Seaborn` and `Matplotlib` to visualize the data and uncover key patterns. We identified `Sex`, `Pclass` (Ticket Class), and `Fare` as strong predictors of survival.
+2.  **Data Cleaning & Preparation:** Loading the dataset and handling missing values (like `Age` and `Embarked`) and transforming non-numeric features (like `Sex`) into machine-readable formats.
+3.  **Model Training & Comparison:** Training four different classification models (`Random Forest`, `Decision Tree`, `Logistic Regression`, and `KNN`) to establish a performance benchmark.
+4.  **Model Evaluation & Analysis:** Comparing the models based on their accuracy scores, and then diving deeper into the best-performing model (Random Forest) by analyzing its **Confusion Matrix** and **Feature Importance**.
 
+### Project Quick View
+
+* **Full Analysis Jupyter Notebook:** `Titanic_ML_Project.ipynb'
+* **Interactive App Code:** `app_titanic.py`
+* **App Libraries** 'reuirements.txt'
+* **Model:** 'titanic_model.pkl'
+  
 ### Tech Stack
 
+* Jupyter Notebook (for analysis, experimentation and process documentation)
 * Python
 * Pandas (for data cleaning and manipulation)
 * Scikit-learn (for model training and evaluation)
