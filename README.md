@@ -18,18 +18,3 @@ The projects are organized into three core categories: **ML Foundations (A)**, *
 | **C1** | Context-Aware Chatbot | RAG/LLMs | ⬜ PENDING | Vector Databases, Retrieval-Augmented Generation, Prompt Engineering | ⬜ |
 | **C2** | Autonomous Tool-Use Agent | Orchestration | ⬜ PENDING | LangChain/CrewAI, Function Calling, Logic Orchestration | ⬜ |
 | **C3** | Fine-Tuning a Pre-Trained Model | Transfer Learning | ⬜ PENDING | Hugging Face ecosystem, Model Fine-Tuning | ⬜ |
-
-***
-
-## 📂 Project Focus: A2 - Ames House Price Prediction
-
-This folder contains the complete project notebook demonstrating **end-to-end Regression** using the Ames Housing dataset.
-
-### Project Goals:
-
-* Master complex data preprocessing (handling missing data based on domain context).
-* Implement robust **Feature Engineering** techniques (e.g., `TotalSqFt`, `HouseAge`).
-* Compare and select the best model (**Lasso Regression**) for high-dimensional data.
-* Achieve a high-performance predictive model (Final RMSE: **$21,316.18**).
-
-[Link to A2 Project Folder](./A2_House_Prices_Regression)
