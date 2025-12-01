@@ -30,16 +30,19 @@ Understanding the data distribution and relationships before modeling.
 **A. Univariate Analysis (Distributions)**
 
 ![EDA Distributions](./Customer_Segmentation_Images/EDA_Univariate_Density.png)
+
 *Distribution of Age, Annual Income, and Spending Score.*
 
 **B. Bivariate Analysis (Income vs. Spending)**
 
 ![EDA Scatter](./Customer_Segmentation_Images/EDA_Scatterplot.png)
+
 *The critical "Money Plot" showing potential natural clusters.*
 
 **C. Multivariate Analysis (Pairplot)**
 
 ![EDA Pairplot](./Customer_Segmentation_Images/EDA_Pairplot.png)
+
 *Pairwise relationships colored by Gender to inspect overlaps.*
 
 ---

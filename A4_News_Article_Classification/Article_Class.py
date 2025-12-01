@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle
 import re
+import os
+
 # Usiamo le stopwords di Sklearn per evitare errori di download/SSL
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 from nltk.stem import PorterStemmer
@@ -9,14 +11,25 @@ from nltk.stem import PorterStemmer
 st.set_page_config(page_title="AI News Classifier", page_icon="📰")
 
 # 2. Load Resources (Cached for performance)
+
 @st.cache_resource
 def load_resources():
+
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # Complete Paths for Files
+
+    model_path = os.path.join(current_dir, 'news_classifier_model.pkl')
+    vectorizer_path = os.path.join(current_dir, 'tfidf_vectorizer.pkl')
+    
     # Load the Model
-    with open('news_classifier_model.pkl', 'rb') as file:
+
+    with open(model_path, 'rb') as file:
         model = pickle.load(file)
     
     # Load the Vectorizer
-    with open('tfidf_vectorizer.pkl', 'rb') as file:
+    
+    with open(vectorizer_path, 'rb') as file:
         vectorizer = pickle.load(file)
         
     return model, vectorizer
